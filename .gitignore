@@ -1,2 +1,6 @@
 # Ignores src folder
-src
+src/adcomhub
+src/apg
+src/lda
+
+
