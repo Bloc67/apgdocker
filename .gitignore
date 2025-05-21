@@ -1,14 +1,2 @@
 # Ignores src folder
-src/adcomhub
-src/apg
-src/lda
-src/bhkmedia.net
-src/bjornhkristiansen.com
-src/blogg_bhk
-src/blogg_media
-src/fotostation
-src/moviedatabase
-src/adcomrss
-
-
-
+src/*
