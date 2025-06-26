@@ -31,7 +31,7 @@ services:
     networks:
       - app-network
     ports:
-      - 80:80
+      - 89:80
     volumes:
       - ./src/:/var/www/html/
 
