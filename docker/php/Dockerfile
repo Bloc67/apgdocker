@@ -17,3 +17,10 @@ RUN docker-php-ext-install mysqli \
     && docker-php-ext-install gd \
     && docker-php-ext-install opcache \
     && docker-php-ext-install exif
+
+RUN apk add --update --no-cache $PHPIZE_DEPS imagemagick imagemagick-libs
+RUN apk add --update --no-cache --virtual .docker-php-imagick-dependencies imagemagick-dev && \
+    pecl install imagick && \ 
+    docker-php-ext-enable imagick && \ 
+    apk del .docker-php-imagick-dependencies
+    
